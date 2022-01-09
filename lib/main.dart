@@ -22,23 +22,14 @@ class App extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            // Container(
-            //   width: 200,
-            //   height: 200,
-            //   decoration: BoxDecoration(
-            //     shape: BoxShape.circle,
-            //     image: DecorationImage(
-            //       image: AssetImage("flutter_application_3/assets/img.jpg
-            //     ),
-            //   ),
-            // ),
+            
             Text("Sheikh Sadia"),
             SizedBox(
               height: 10,
             ),
             Text("kanizsadia"),
             SizedBox(
-              height: 5,
+              height: 10,
             ),
             CustomButton(),
           ],

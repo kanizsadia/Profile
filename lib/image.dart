@@ -5,13 +5,10 @@ class Picture extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: ClipOval(
-        child: Image.asset(
-          'flutter_application_3/assets/img.jpg',
-          fit: BoxFit.cover,
-        ),
-      ),
-    );
+    return CircleAvatar(
+            backgroundImage: AssetImage(
+                "assets/img.jpg"),
+            radius: 90,
+          );
   }
 }

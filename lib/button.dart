@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({Key? key}) : super(key: key);
@@ -8,12 +9,13 @@ class CustomButton extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+       
         ElevatedButton.icon(
           onPressed: () {},
-          icon: Icon(
-            Icons.gite,
-            color: Colors.white,
-          ),
+          icon: 
+           FaIcon(FontAwesomeIcons.github,color: Colors.white,), 
+            
+          
           label: Text("Github"),
           style: ElevatedButton.styleFrom(
             primary: Colors.pink,
@@ -27,8 +29,7 @@ class CustomButton extends StatelessWidget {
         ),
         ElevatedButton.icon(
           onPressed: () {},
-          icon: Icon(
-            Icons.link,
+          icon: FaIcon(FontAwesomeIcons.linkedin,
             color: Colors.white,
           ),
           label: Text("LinkedIn"),
@@ -44,8 +45,7 @@ class CustomButton extends StatelessWidget {
         ),
         ElevatedButton.icon(
           onPressed: () {},
-          icon: Icon(
-            Icons.tag,
+          icon: FaIcon(FontAwesomeIcons.twitter,
             color: Colors.white,
           ),
           label: Text("Twitter"),
@@ -61,8 +61,7 @@ class CustomButton extends StatelessWidget {
         ),
         ElevatedButton.icon(
           onPressed: () {},
-          icon: Icon(
-            Icons.facebook,
+          icon: FaIcon(FontAwesomeIcons.facebook,
             color: Colors.white,
           ),
           label: Text("Facebook"),
