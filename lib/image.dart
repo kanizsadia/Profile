@@ -6,9 +6,8 @@ class Picture extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-            backgroundImage: AssetImage(
-                "assets/img.jpg"),
-            radius: 90,
-          );
+      backgroundImage: AssetImage("assets/img.jpg"),
+      radius: 90,
+    );
   }
 }

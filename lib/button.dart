@@ -9,16 +9,17 @@ class CustomButton extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-       
         ElevatedButton.icon(
-          onPressed: () {},
-          icon: 
-           FaIcon(FontAwesomeIcons.github,color: Colors.white,), 
-            
-          
+          onPressed: () {
+            // Get.utils.openPage("https://github.com/kanizsadia");
+          },
+          icon: FaIcon(
+            FontAwesomeIcons.github,
+            color: Colors.white,
+          ),
           label: Text("Github"),
           style: ElevatedButton.styleFrom(
-            primary: Colors.pink,
+            primary: Colors.teal,
             shape: new RoundedRectangleBorder(
               borderRadius: new BorderRadius.circular(20.0),
             ),
@@ -29,12 +30,13 @@ class CustomButton extends StatelessWidget {
         ),
         ElevatedButton.icon(
           onPressed: () {},
-          icon: FaIcon(FontAwesomeIcons.linkedin,
+          icon: FaIcon(
+            FontAwesomeIcons.linkedin,
             color: Colors.white,
           ),
           label: Text("LinkedIn"),
           style: ElevatedButton.styleFrom(
-            primary: Colors.pink,
+            primary: Colors.teal,
             shape: new RoundedRectangleBorder(
               borderRadius: new BorderRadius.circular(20.0),
             ),
@@ -45,12 +47,13 @@ class CustomButton extends StatelessWidget {
         ),
         ElevatedButton.icon(
           onPressed: () {},
-          icon: FaIcon(FontAwesomeIcons.twitter,
+          icon: FaIcon(
+            FontAwesomeIcons.twitter,
             color: Colors.white,
           ),
           label: Text("Twitter"),
           style: ElevatedButton.styleFrom(
-            primary: Colors.pink,
+            primary: Colors.teal,
             shape: new RoundedRectangleBorder(
               borderRadius: new BorderRadius.circular(20.0),
             ),
@@ -61,12 +64,47 @@ class CustomButton extends StatelessWidget {
         ),
         ElevatedButton.icon(
           onPressed: () {},
-          icon: FaIcon(FontAwesomeIcons.facebook,
+          icon: FaIcon(
+            FontAwesomeIcons.facebook,
             color: Colors.white,
           ),
           label: Text("Facebook"),
           style: ElevatedButton.styleFrom(
-            primary: Colors.pink,
+            primary: Colors.teal,
+            shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.circular(20.0),
+            ),
+          ),
+        ),
+        SizedBox(
+          width: 10,
+        ),
+        ElevatedButton.icon(
+          onPressed: () {},
+          icon: FaIcon(
+            FontAwesomeIcons.discord,
+            color: Colors.white,
+          ),
+          label: Text("Discord"),
+          style: ElevatedButton.styleFrom(
+            primary: Colors.teal,
+            shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.circular(20.0),
+            ),
+          ),
+        ),
+        SizedBox(
+          width: 10,
+        ),
+        ElevatedButton.icon(
+          onPressed: () {},
+          icon: FaIcon(
+            FontAwesomeIcons.instagram,
+            color: Colors.white,
+          ),
+          label: Text("Instagram"),
+          style: ElevatedButton.styleFrom(
+            primary: Colors.teal,
             shape: new RoundedRectangleBorder(
               borderRadius: new BorderRadius.circular(20.0),
             ),
