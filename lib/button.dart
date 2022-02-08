@@ -1,3 +1,6 @@
+import 'dart:html';
+import 'package:url_launcher/url_launcher.dart';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -10,8 +13,11 @@ class CustomButton extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ElevatedButton.icon(
-          onPressed: () {
-            // Get.utils.openPage("https://github.com/kanizsadia");
+          onPressed: () async {
+            final url = "https://github.com/kanizsadia";
+            if (await canLaunch(url)) {
+              await launch(url);
+            }
           },
           icon: FaIcon(
             FontAwesomeIcons.github,
@@ -29,7 +35,12 @@ class CustomButton extends StatelessWidget {
           width: 10,
         ),
         ElevatedButton.icon(
-          onPressed: () {},
+          onPressed: () async {
+            final url = "https://www.linkedin.com/in/sheikh-sadia-5113a9229";
+            if (await canLaunch(url)) {
+              await launch(url);
+            }
+          },
           icon: FaIcon(
             FontAwesomeIcons.linkedin,
             color: Colors.white,
@@ -46,7 +57,12 @@ class CustomButton extends StatelessWidget {
           width: 10,
         ),
         ElevatedButton.icon(
-          onPressed: () {},
+          onPressed: () async {
+            final url = "https://twitter.com/SheikhS62703692";
+            if (await canLaunch(url)) {
+              await launch(url);
+            }
+          },
           icon: FaIcon(
             FontAwesomeIcons.twitter,
             color: Colors.white,
@@ -63,7 +79,12 @@ class CustomButton extends StatelessWidget {
           width: 10,
         ),
         ElevatedButton.icon(
-          onPressed: () {},
+          onPressed: () async {
+            final url = "https://web.facebook.com/sheikh.sadia.3975";
+            if (await canLaunch(url)) {
+              await launch(url);
+            }
+          },
           icon: FaIcon(
             FontAwesomeIcons.facebook,
             color: Colors.white,
@@ -80,7 +101,12 @@ class CustomButton extends StatelessWidget {
           width: 10,
         ),
         ElevatedButton.icon(
-          onPressed: () {},
+          onPressed: () async {
+            final url = "https://discord.com/channels/@me/937974192136138783";
+            if (await canLaunch(url)) {
+              await launch(url);
+            }
+          },
           icon: FaIcon(
             FontAwesomeIcons.discord,
             color: Colors.white,
@@ -97,7 +123,12 @@ class CustomButton extends StatelessWidget {
           width: 10,
         ),
         ElevatedButton.icon(
-          onPressed: () {},
+          onPressed: () async {
+            final url = "https://www.instagram.com/sheikh.sadia.3975";
+            if (await canLaunch(url)) {
+              await launch(url);
+            }
+          },
           icon: FaIcon(
             FontAwesomeIcons.instagram,
             color: Colors.white,
