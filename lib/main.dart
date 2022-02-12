@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/blogs.dart';
+// import 'package:flutter_application_3/contact.dart';
+import 'package:get/get.dart';
 
 import 'button.dart';
 import 'image.dart';
@@ -12,7 +15,7 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.grey[300],
@@ -84,7 +87,9 @@ class App extends StatelessWidget {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Get.to(Blogs());
+              },
               child: Container(
                 margin: EdgeInsets.only(top: 1, left: 900),
                 child: Text(
@@ -96,7 +101,9 @@ class App extends StatelessWidget {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                // Get.to(Contact());
+              },
               child: Container(
                 margin: EdgeInsets.only(top: 1, left: 950),
                 child: Text(

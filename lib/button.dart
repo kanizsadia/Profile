@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:flutter/material.dart';
@@ -36,7 +35,7 @@ class CustomButton extends StatelessWidget {
         ),
         ElevatedButton.icon(
           onPressed: () async {
-            final url = "https://www.linkedin.com/in/sheikh-sadia-5113a9229";
+            final url = "https://www.linkedin.com/in/sheikh-sadia-5113a9229  ";
             if (await canLaunch(url)) {
               await launch(url);
             }
